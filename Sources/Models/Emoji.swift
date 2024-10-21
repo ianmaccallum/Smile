@@ -6,7 +6,7 @@
 //  Copyright © 2024 Fantageek. All rights reserved.
 //
 
-public struct Emoji: Codable, Identifiable {
+public struct Emoji: Codable, Identifiable, Hashable {
   public var id: String {
     value
   }

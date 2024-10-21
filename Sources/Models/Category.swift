@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Category: Codable, Identifiable {
+public struct Category: Codable, Identifiable, Hashable {
   public var id: String {
     name
   }
