@@ -43,27 +43,36 @@ function parse(data) {
     if (!categories[item.category]) {
       categories[item.category] = []
     }
-    categories[item.category].push(item.emoji);
+    categories[item.category].push(item);
   })
 
   string = string + ']'
 
-  fs.writeFileSync('../Sources/Emoji.swift', string);
+  fs.writeFileSync('../Sources/Emojis.swift', string);
 };
+
+const formatEmoji = (emoji) => {
+  return `Emoji(
+    value: "${emoji.emoji}", 
+    description: "${emoji.description}", 
+    aliases: [${emoji.aliases.map(alias => `"${alias}"`).join(", ")}], 
+    tags: [${emoji.tags.map(tag => `"${tag}"`).join(", ")}]
+  )`
+}
+
+const formatCategory = (category) => {
+  return `Category(name: "${category}", emojis: [\n${categories[category].map(formatEmoji).join(",\n")}\n])`
+}
 
 
 function parse_categories() {
-  var string = 'public let emojiCategories: [String: [String]] = [\n'
-  Object.keys(categories).forEach(function (category) {
-    const emojis = categories[category].map(function (emoji) {
-      return '"' + emoji + '"';
-    }).join(",");
+  var string = 'public let emojiCategories: [Category] = [\n'
+  string += Object.keys(categories).map(function (category) {
+    return formatCategory(category)
+  }).join(",\n")
 
-    const itemString = '  "' + category + '": [' + emojis + '],\n'
-    string = string + itemString
-  });
 
-  string = string + ']'
+  string = string + '\n]'
 
   fs.writeFileSync('../Sources/Categories.swift', string);
 };

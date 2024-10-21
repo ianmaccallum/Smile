@@ -221,14 +221,12 @@ public func replaceAlias(string: String) -> String {
 // MARK: - Category
 
 /// Determine the category of emoji
-public func category(emoji: String) -> String? {
-  for (category, list) in emojiCategories {
-    if list.contains(emoji) {
-      return category
+public func category(emoji: String) -> Category? {
+  return emojiCategories.first { c in
+    c.emojis.contains { e in
+      e.value == emoji
     }
   }
-
-  return nil
 }
 
 // MARK: - Manipulation

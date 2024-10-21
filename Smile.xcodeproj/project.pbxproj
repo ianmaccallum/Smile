@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82A72AA62CC6D036007631A6 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A72AA52CC6D02E007631A6 /* Emoji.swift */; };
+		82A72AA72CC6D036007631A6 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A72AA52CC6D02E007631A6 /* Emoji.swift */; };
+		82A72AA92CC6D043007631A6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A72AA82CC6D043007631A6 /* Category.swift */; };
+		82A72AAA2CC6D043007631A6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A72AA82CC6D043007631A6 /* Category.swift */; };
 		D20AFE9C1E5FA5CA00AFB7E9 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20AFE9B1E5FA5CA00AFB7E9 /* Sequence.swift */; };
 		D20AFE9D1E5FA5CA00AFB7E9 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20AFE9B1E5FA5CA00AFB7E9 /* Sequence.swift */; };
 		D23991E41D10AA3600CA2E5D /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23991E31D10AA3600CA2E5D /* Categories.swift */; };
@@ -15,8 +19,8 @@
 		D2DBF1E51D04C6ED00166F7B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBF1E31D04C6ED00166F7B /* Tests.swift */; };
 		D2DBF1E81D04C71300166F7B /* Smile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBF1E71D04C71300166F7B /* Smile.swift */; };
 		D2DBF1E91D04C71300166F7B /* Smile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBF1E71D04C71300166F7B /* Smile.swift */; };
-		D2DBF1EB1D04D1EB00166F7B /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBF1EA1D04D1EB00166F7B /* Emoji.swift */; };
-		D2DBF1EC1D04D1EB00166F7B /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBF1EA1D04D1EB00166F7B /* Emoji.swift */; };
+		D2DBF1EB1D04D1EB00166F7B /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBF1EA1D04D1EB00166F7B /* Emojis.swift */; };
+		D2DBF1EC1D04D1EB00166F7B /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBF1EA1D04D1EB00166F7B /* Emojis.swift */; };
 		D2DBF1EE1D04D54300166F7B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBF1ED1D04D54300166F7B /* Utils.swift */; };
 		D2DBF1EF1D04D54300166F7B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBF1ED1D04D54300166F7B /* Utils.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Smile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Smile.framework */; };
@@ -41,11 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82A72AA52CC6D02E007631A6 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		82A72AA82CC6D043007631A6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D20AFE9B1E5FA5CA00AFB7E9 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		D23991E31D10AA3600CA2E5D /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		D2DBF1E31D04C6ED00166F7B /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D2DBF1E71D04C71300166F7B /* Smile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Smile.swift; sourceTree = "<group>"; };
-		D2DBF1EA1D04D1EB00166F7B /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		D2DBF1EA1D04D1EB00166F7B /* Emojis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emojis.swift; sourceTree = "<group>"; };
 		D2DBF1ED1D04D54300166F7B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Smile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Smile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* Smile-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smile-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,11 +97,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82A72AA42CC6D025007631A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82A72AA52CC6D02E007631A6 /* Emoji.swift */,
+				82A72AA82CC6D043007631A6 /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D2DBF1E61D04C70A00166F7B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				82A72AA42CC6D025007631A6 /* Models */,
 				D23991E31D10AA3600CA2E5D /* Categories.swift */,
-				D2DBF1EA1D04D1EB00166F7B /* Emoji.swift */,
+				D2DBF1EA1D04D1EB00166F7B /* Emojis.swift */,
 				D2DBF1E71D04C71300166F7B /* Smile.swift */,
 				D2DBF1ED1D04D54300166F7B /* Utils.swift */,
 				D20AFE9B1E5FA5CA00AFB7E9 /* Sequence.swift */,
@@ -328,11 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A72AA72CC6D036007631A6 /* Emoji.swift in Sources */,
 				D20AFE9C1E5FA5CA00AFB7E9 /* Sequence.swift in Sources */,
-				D2DBF1EB1D04D1EB00166F7B /* Emoji.swift in Sources */,
+				D2DBF1EB1D04D1EB00166F7B /* Emojis.swift in Sources */,
 				D23991E41D10AA3600CA2E5D /* Categories.swift in Sources */,
 				D2DBF1E81D04C71300166F7B /* Smile.swift in Sources */,
 				D2DBF1EE1D04D54300166F7B /* Utils.swift in Sources */,
+				82A72AAA2CC6D043007631A6 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,11 +366,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A72AA62CC6D036007631A6 /* Emoji.swift in Sources */,
 				D20AFE9D1E5FA5CA00AFB7E9 /* Sequence.swift in Sources */,
-				D2DBF1EC1D04D1EB00166F7B /* Emoji.swift in Sources */,
+				D2DBF1EC1D04D1EB00166F7B /* Emojis.swift in Sources */,
 				D23991E51D10B1FC00CA2E5D /* Categories.swift in Sources */,
 				D2DBF1E91D04C71300166F7B /* Smile.swift in Sources */,
 				D2DBF1EF1D04D54300166F7B /* Utils.swift in Sources */,
+				82A72AA92CC6D043007631A6 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +525,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Smile/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Smile.Smile-iOS";
 				PRODUCT_NAME = Smile;
@@ -526,7 +546,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Smile/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Smile.Smile-iOS";
 				PRODUCT_NAME = Smile;
